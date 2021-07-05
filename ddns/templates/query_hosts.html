@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>Hosts</title>
+    </head>
+    <body>
+        <style>
+            .mono {
+                font-family: monospace;
+            }
+        </style>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>hostname</th>
+                    <th>address</th>
+                </tr>
+            </thead>
+            <tbody>
+                    {% for host in hosts %}
+                    <tr>
+                        <td class="mono">{{ host.hostname }}</td>
+                        <td class="mono">{{ host.address }}</td>
+                    </tr>
+                    {% endfor %}
+            </tbody>
+        </table>
+    </body>
+</html>

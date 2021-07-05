@@ -1,0 +1,6 @@
+A web server which stores the dynamic dns record:
+    - [*] provides noip compatible http update interface with credential verification
+    - [] provides xml/json query interface for dns records under a specifc credential
+    - [*] provides web page for query dns records under a specific credential
+    - [*] stores dns records either in a local text file or in a database
+    - (tentative) provides A and AAAA resolution with dnslib.py

@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <title>IP updated</title>
+    </head>
+    <body>
+        <style>
+            .mono {
+                font-family: monospace;
+                background-color: lightsteelblue;
+            }
+        </style>
+        {% if existed %}
+        <p>IP for host <span class="mono">{{ hostname }}</span> is successfully updated as <span class="mono">{{ address }}</span>.</p>
+        {% else %}
+        <p>IP for host <span class="mono">{{ hostname }}</span> is successfully created as <span class="mono">{{ address }}</span>.</p>
+        {% endif %}
+    </body>
+</html>
